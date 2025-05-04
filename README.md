@@ -1,2 +1,3 @@
-# javascript-applications
-👨‍💻 Collection of JavaScript applications.
+# Javascript applications
+
+A collection of JavaScript applications created for fun.
