@@ -40,6 +40,14 @@ body {
   display: grid;
 }
 
+.fx {
+  display: flex;
+}
+
+.gap {
+  gap: var(--gap);
+}
+
 .text--center {
   text-align: center;
 }
@@ -50,7 +58,8 @@ body {
 }
 
 .app--heading,
-.app--subheading {
+.app--subheading,
+.app--title {
   color: var(--app-subheading-color);
   background: var(--app-heading-gradient);
   -webkit-background-clip: text;
@@ -82,3 +91,61 @@ body {
     overflow: auto;
   }
 }
+
+.app--title {
+  margin-bottom: var(--gap);
+}
+
+.app--loader {
+  text-align: center;
+  font-size: 12px;
+  margin: var(--gap);
+  display: none;
+}
+
+.app--component.show-loader .app--loader {
+  display: block;
+}
+
+/* Start: App 1 */
+.app-1__products-container {
+  display: grid;
+  gap: var(--gap);
+}
+
+.app-1__product {
+  padding: var(--gap);
+  border: 1px solid var(--app-shell-border-color);
+}
+
+.app-1__product-details {
+  gap: calc(var(--gap) * 2);
+}
+
+.app-1__product-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.app-1__product-img-container {
+  width: 25%;
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--app-shell-border-color);
+  }
+}
+
+.app-1__product-price {
+  font-weight: bold;
+}
+
+.app-1__product-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: var(--gap);
+}
+/* End: App 1 */
