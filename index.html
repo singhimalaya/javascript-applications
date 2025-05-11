@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript applications</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+    <script type="module" src="main.mjs"></script>
   </head>
   <body class="app--theme-dark">
     <h1 class="app--heading text--center">JavaScript applications</h1>
@@ -14,7 +14,27 @@
     </h2>
     <div class="main-container gd">
       <div class="app-shell">
-        <div class="app-shell__content"></div>
+        <div class="app-shell__content">
+          <div class="app--title text--center">Products list</div>
+          <div class="app--component" id="app-products-list"></div>
+          <template id="app-1__product-tpl">
+            <div class="app-1__product">
+              <div class="app-1__product-header fx gap">
+                <div class="app-1__product-img-container">
+                  <img class="app-1__product-img" loading="lazy" />
+                </div>
+                <div class="app-1__product-details gd">
+                  <div class="app-1__product-title"></div>
+                  <div class="fx gap">
+                    <div>Price</div>
+                    <div class="app-1__product-price"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-1__product-description"></div>
+            </div>
+          </template>
+        </div>
       </div>
       <div class="app-shell">
         <div class="app-shell__content"></div>
